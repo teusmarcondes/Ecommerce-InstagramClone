@@ -12,10 +12,21 @@ body {
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #dbdbdb;
-    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
     top: 0;
     width: 100%;
     text-align: center;
+}
+
+.redes a, .local a{
+    text-decoration: none;
+    color: black;
 }
 
 header .logo {
@@ -32,16 +43,6 @@ header .icons img {
 
 h1 {
     color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    cursor: pointer;
-    background-color: transparent;
 }
 
 button {
@@ -73,33 +74,59 @@ img[class="perfil"] {
     border-radius: 5px;
 }
 
-.prev, .next {
-    background-color: rgb(192, 192, 192);
-    border-radius: 50%;
+i{
     cursor: pointer;
 }
 
-.prev {
-    float: left;
-}
-
-.next {
-    float: right;
+.post{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
 }
 
 .product {
     border-bottom: 1px solid #eee;
 }
 
+.col-md-6{
+    float: center;
+}
+
 section#cart {
     text-align: center;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+a[href="https://www.instagram.com/stor.ecaroline/"], a[href="https://wa.me/5541988240799"]{
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a[href="https://www.instagram.com/stor.ecaroline/"]:hover{
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a[href="https://wa.me/5541988240799"]:hover{
+    background-color: rgb(38, 238, 38);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 @media (min-width: 200px){    
     header {
         padding: 10px 0;
-        z-index: 1000;
-        margin-bottom: 20px;
     }
 
     header .logo {
@@ -109,20 +136,29 @@ section#cart {
     header .icons img {
         margin-left: 15px;
     }
-    
+
     main {
-        margin-top: 60px;
-        padding-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 24px;
     }
     
-    a {
-        margin: 0px 10px 0px 0px;
+    h1{
+        margin-bottom: 5px;
+        font-size: 24px;
     }
-    
-    a:hover {
-        padding: 15px 15px 0px 0px;
+
+    h3{
+        font-size: 16px;
     }
-    
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3, h2{
+        margin-top: 10px;
+    }
+
     span {
         margin: 0px 0px 0px 10px;
     }
@@ -130,30 +166,73 @@ section#cart {
     button {
         padding: 10px;
     }
-    
-    .logo, .pagI, .pesq, .exp, .rls, .msg, .ntfs, .criar, .prof{
+
+    footer h1{
+        font-size: 18px;
+    }
+
+    footer{
+        height: 186px;
+    }
+
+    .logo, .home, .search, .explore, .reels, .messenger, .notifs, .create, .profile{
         display: none;
     }
     
     .post img {
-        width: 30%;
-    }
-    
-    .prev, .next {
-        padding: 8px;
-    }
-    
-    .prev {
-        margin: 40px 0px 0px 50px;
-    }
-    
-    .next {
-        margin: 40px 50px 0px 0px;
+        width: 50%;
     }
     
     .product {
         margin-bottom: 10px;
         padding-bottom: 10px;
+    }
+
+    .redes{
+        margin: 5px 10px 0px 0px;
+    }
+
+    .hora{
+        margin: 15px 0px 0px 0px;
+        float: center;
+    }
+
+    .local{
+        margin: 10px 10px 0px 0px;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+
+    .carrinho, .lista{
+        margin-right: 100px;
+        float: center;
+    }
+
+    .user{
+        font-weight: bold;
+        margin-right: 35px;
+    }
+
+    .direito{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    img[src="img/carrinho-de-compras.png"], img[src="img/pedido.png"]{
+        width: 50px;
+        float: left;
+        margin: 30px 0px 0px 50px;
+    }
+
+    i{
+        margin-right: 5px;   
+    }
+
+    i[class="fa-solid fa-angle-left fa-2xl"]{
+        padding: 10px;
+        float: left;
     }
 }
 
@@ -223,6 +302,11 @@ section#cart {
     .product {
         margin-bottom: 10px;
         padding-bottom: 10px;
+    }
+
+    .hora{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
