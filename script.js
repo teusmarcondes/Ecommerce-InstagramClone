@@ -59,3 +59,21 @@ function checkout() {
     cart = [];
     updateCart();
 }
+
+document.getElementById('whatsapp-button').addEventListener('click', function() {
+    sendWhatsAppMessage();
+});
+
+function sendWhatsAppMessage() {
+    let message = "Resumo do Carrinho:\n";
+    cart.forEach(item => {
+        message += `${item.name} - R$ ${item.price} x ${item.quantity}\n`;
+    });
+    let total = document.getElementById('total').innerText;
+    message += `Total: R$ ${total}`;
+
+    let phoneNumber = "5541988240799"; // Insira o número de telefone no formato internacional, sem sinais de "+" ou "00"
+    let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+}

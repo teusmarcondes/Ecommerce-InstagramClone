@@ -12,14 +12,14 @@
             <img width="100px" src="img/Instagram_logo.svg.png" alt="Instagram">
         </div>
         <nav class="menu">
-            <a href=""><img width="25px" src="img/5948524.png" alt="Página inicial"><span>Página inicial</span></a>
-            <a href=""><img width="25px" src="img/4024513.png" alt="Pesquisa"><span>Pesquisa</span></a>
-            <a href=""><img width="25px" src="img/explore-icon-256x256-vgptecd8.png" alt="Explorar"><span>Explorar</span></a>
-            <a href=""><img width="25px" src="img/instagram-reels-logo-18CF7D9510-seeklogo.com.png" alt="Reels"><span>Reels</span></a>
-            <a href=""><img width="25px" src="img/free-facebook-messenger-icon-2880-thumb.png" alt="Mensagens"><span>Mensagens</span></a>
-            <a href=""><img width="25px" src="img/107804.png" alt="Notificações"><span>Notificações</span></a>
-            <a href=""><img width="25px" src="img/6537820.png" alt="Criar"><span>Criar</span></a>
-            <a href=""><img class="perfil" width="25px" src="img/887603_user_512x512.png" alt="Perfil"><span>Perfil</span></a>
+            <a href="#" class="home"><img width="25px" src="img/5948524.png" alt="Página Inicial"><span class="pagI">Página inicial</span></a>
+            <a href="#" class="search"><img width="25px" src="img/4024513.png" alt="pesquisa"><span class="pesq">Pesquisa</span></a>
+            <a href="#" class="explore"><img width="25px" src="img/explore-icon-256x256-vgptecd8.png" alt="explorar"><span class="exp">Explorar</span></a>
+            <a href="#" class="reels"><img width="25px" src="img/instagram-reels-logo-18CF7D9510-seeklogo.com.png" alt="reel"><span class="rls">Reels</span></a>
+            <a href="#" class="messenger"><img width="25px" src="img/free-facebook-messenger-icon-2880-thumb.png" alt="mensagens"><span class="msg">Mensagens</span></a>
+            <a href="#" class="notifications"><img alt="Notificações" width="25px" src="img/107804.png"><span class="ntfs">Notificações</span></a>
+            <a href="#" class="create"><img alt="Criar" width="25px" src="img/6537820.png"><span class="criar">Criar</span></a>
+            <a href="#" class="profile"><img alt="Perfil" width="25px" src="img/887603_user_512x512.png"><span class="prof">Perfil</span></a>
         </nav>
     </header>
     <main>
@@ -44,15 +44,17 @@
                     <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
                 </div>
             </div>
-            <!-- Adicione mais produtos conforme necessário -->
         </div>
         <section id="cart">
             <h2>Carrinho</h2>
             <ul id="cart-items"></ul>
             <p>Total: R$ <span id="total">0.00</span></p>
-            <button onclick="checkout()">Finalizar Compra</button>
+            <button id="whatsapp-button">Enviar no WhatsApp</button>
         </section>
     </main>
+    <footer>
+        
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

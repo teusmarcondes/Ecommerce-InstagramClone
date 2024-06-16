@@ -12,31 +12,14 @@ body {
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #dbdbdb;
-    padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 header .logo {
-    width: 100px;
     float: left;
-}
-
-header .search-bar {
-    float: left;
-    margin-left: 20px;
-}
-
-header .search-bar input {
-    padding: 6px 10px;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    font-size: 14px;
-    width: 200px;
 }
 
 header .icons {
@@ -51,32 +34,20 @@ h1 {
     color: #333;
 }
 
-main {
-    margin-top: 60px;
-    padding-top: 20px;
-}
-
 a {
-    margin: 0px 10px 0px 0px;
     text-decoration: none;
     color: black;
 }
 
 a:hover {
-    padding: 15px 15px 0px 0px;
     cursor: pointer;
-    background-color: gray;
-}
-
-span {
-    margin: -1000px 0px 0px 10px;
+    background-color: transparent;
 }
 
 button {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
@@ -96,37 +67,224 @@ img[class="perfil"] {
 
 .logo img {
     float: left;
-    margin-left: 130px;
 }
 
 .post img {
-    width: 30%;
     border-radius: 5px;
 }
 
 .prev, .next {
     background-color: rgb(192, 192, 192);
-    padding: 8px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .prev {
     float: left;
-    margin: 210px 0px 0px 400px;
 }
 
 .next {
     float: right;
-    margin: 210px 400px 0px 0px;
 }
 
 .product {
     border-bottom: 1px solid #eee;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
 }
 
 section#cart {
     text-align: center;
+}
+
+@media (min-width: 200px){    
+    header {
+        padding: 10px 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+    }
+
+    header .logo {
+        width: 100px;
+    }
+    
+    header .icons img {
+        margin-left: 15px;
+    }
+    
+    main {
+        margin-top: 60px;
+        padding-top: 20px;
+    }
+    
+    a {
+        margin: 0px 10px 0px 0px;
+    }
+    
+    a:hover {
+        padding: 15px 15px 0px 0px;
+    }
+    
+    span {
+        margin: 0px 0px 0px 10px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+    
+    .logo, .pagI, .pesq, .exp, .rls, .msg, .ntfs, .criar, .prof{
+        display: none;
+    }
+    
+    .post img {
+        width: 30%;
+    }
+    
+    .prev, .next {
+        padding: 8px;
+    }
+    
+    .prev {
+        margin: 40px 0px 0px 50px;
+    }
+    
+    .next {
+        margin: 40px 50px 0px 0px;
+    }
+    
+    .product {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px){}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px){}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px){
+    header {
+        padding: 10px 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+    }
+    
+    header .logo {
+        width: 100px;
+    }
+    
+    header .icons img {
+        margin-left: 15px;
+    }
+    
+    main {
+        margin-top: 60px;
+        padding-top: 20px;
+    }
+    
+    a {
+        margin: 0px 10px 0px 0px;
+    }
+    
+    a:hover {
+        padding: 15px 15px 0px 0px;
+    }
+    
+    span {
+        margin: -1000px 0px 0px 10px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+    
+    .logo img {
+        margin-left: 130px;
+    }
+    
+    .post img {
+        width: 30%;
+    }
+    
+    .prev, .next {
+        padding: 8px;
+    }
+    
+    .prev {
+        margin: 210px 0px 0px 400px;
+    }
+    
+    .next {
+        margin: 210px 400px 0px 0px;
+    }
+    
+    .product {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px){
+    header {
+        padding: 10px 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+    }
+    
+    header .logo {
+        width: 100px;
+    }
+    
+    header .icons img {
+        margin-left: 15px;
+    }
+    
+    main {
+        margin-top: 60px;
+        padding-top: 20px;
+    }
+    
+    a {
+        margin: 0px 10px 0px 0px;
+    }
+    
+    a:hover {
+        padding: 15px 15px 0px 0px;
+    }
+    
+    span {
+        margin: -1000px 0px 0px 10px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+    
+    .logo img {
+        margin-left: 130px;
+    }
+    
+    .post img {
+        width: 30%;
+    }
+    
+    .prev, .next {
+        padding: 8px;
+    }
+    
+    .prev {
+        margin: 210px 0px 0px 400px;
+    }
+    
+    .next {
+        margin: 210px 400px 0px 0px;
+    }
+    
+    .product {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
 }
