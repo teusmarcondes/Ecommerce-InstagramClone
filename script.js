@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+
+    // Verifica o tema atual na carga inicial da página
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+    } else {
+        document.body.classList.add('light-theme');
+    }
+
+    // Alterna entre os temas ao clicar no botão
+    themeToggle.addEventListener('click', function() {
+        if (document.body.classList.contains('light-theme')) {
+            document.body.classList.remove('light-theme');
+            document.body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
 let currentPostIndex = 0;
 const posts = document.querySelectorAll('.post');
 const totalPosts = posts.length;
@@ -40,7 +64,7 @@ function updateCart() {
     cart.forEach(item => {
         let li = document.createElement('li');
         li.innerHTML = `${item.name} - R$ ${item.price} x ${item.quantity}
-            <button onclick="removeFromCart(${item.id})">Remover</button>`;
+        <button class="remove" onclick="removeFromCart(${item.id})">Remover</button>`;
         cartItems.appendChild(li);
 
         total += item.price * item.quantity;

@@ -15,16 +15,17 @@
             <img width="100px" src="img/Instagram_logo.svg.png" alt="Instagram">
         </div>
         <nav class="menu">
-            <a href="#" class="home"><img width="25px" src="img/5948524.png" alt="Página Inicial"><span class="pagI">Página inicial</span></a>
-            <a href="#" class="search"><img width="25px" src="img/4024513.png" alt="pesquisa"><span class="pesq">Pesquisa</span></a>
-            <a href="#" class="explore"><img width="25px" src="img/explore-icon-256x256-vgptecd8.png" alt="explorar"><span class="exp">Explorar</span></a>
-            <a href="#" class="reels"><img width="25px" src="img/instagram-reels-logo-18CF7D9510-seeklogo.com.png" alt="reel"><span class="rls">Reels</span></a>
-            <a href="#" class="messenger"><img width="25px" src="img/free-facebook-messenger-icon-2880-thumb.png" alt="mensagens"><span class="msg">Mensagens</span></a>
-            <a href="#" class="notifs"><img alt="Notificações" width="25px" src="img/107804.png"><span class="ntfs">Notificações</span></a>
-            <a href="#" class="create"><img alt="Criar" width="25px" src="img/6537820.png"><span class="criar">Criar</span></a>
-            <a href="#" class="profile"><img alt="Perfil" width="25px" src="img/887603_user_512x512.png"><span class="prof">Perfil</span></a>
+            <a href="#" class="home1"><img width="25px" src="img/5948524.png" alt="Página Inicial"><span class="pagI">Página inicial</span></a>
+            <a href="#" class="search1"><img width="25px" src="img/4024513.png" alt="pesquisa"><span class="pesq">Pesquisa</span></a>
+            <a href="#" class="explore1"><img width="25px" src="img/explore-icon-256x256-vgptecd8.png" alt="explorar"><span class="exp">Explorar</span></a>
+            <a href="#" class="reels1"><img width="25px" src="img/instagram-reels-logo-18CF7D9510-seeklogo.com.png" alt="reel"><span class="rls">Reels</span></a>
+            <a href="#" class="messenger1"><img width="25px" src="img/free-facebook-messenger-icon-2880-thumb.png" alt="mensagens"><span class="msg">Mensagens</span></a>
+            <a href="#" class="notifs1"><img alt="Notificações" width="25px" src="img/107804.png"><span class="ntfs">Notificações</span></a>
+            <a href="#" class="create1"><img alt="Criar" width="25px" src="img/6537820.png"><span class="criar">Criar</span></a>
+            <a href="#" class="profile1"><img alt="Perfil" width="25px" src="img/logo.png"><span class="prof">Perfil</span></a>
             <i class="fa-solid fa-angle-left fa-2xl"></i>
             <p class="user">stor.ecaroline</p>
+            <button class="theme" id="theme-toggle"><i class="fa-solid fa-lightbulb fa-2xl"></i></button>
         </nav>
     </header>
     <main>
@@ -38,8 +39,8 @@
                     <img src="img/pedido.png" alt="lista">
                     <div class="lista">
                         <h3>Vestido Azul</h3>
-                        <p>R$ 50,00</p>
-                        <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+                        <p class="preco">R$ 50,00</p>
+                        <button class="add" onclick="addToCart(1)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -51,8 +52,8 @@
                     <img src="img/pedido.png" alt="lista">
                     <div class="lista">
                         <h3>Camiseta Listrada</h3>
-                        <p>R$ 50,00</p>
-                        <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
+                        <p class="preco">R$ 50,00</p>
+                        <button class="add" onclick="addToCart(2)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -62,8 +63,8 @@
             <div class="carrinho">
                 <h2>Carrinho</h2>
                 <ul id="cart-items"></ul>
-                <p>Total: R$ <span id="total">0.00</span></p>
-                <button id="whatsapp-button">Enviar no WhatsApp</button>
+                <p class="ptotal">Total: R$ <span id="total">0.00</span></p>
+                <button class="send" id="whatsapp-button">Enviar no WhatsApp</button>
             </div>
         </section>
     </main>
@@ -81,13 +82,27 @@
             <div class="local">
                 <h1>Localização</h1>
                 <a href="https://www.google.com/maps/place/R.+Clemente+Itsyo+Horikoshi,+330+-+Jardim+Claudia,+Pinhais+-+PR,+83326-650/@-25.3950133,-49.1782159,15z/data=!4m16!1m9!3m8!1s0x94dcefb9192bdfa7:0x1260145535d178dd!2sR.+Clemente+Itsyo+Horikoshi,+330+-+Jardim+Claudia,+Pinhais+-+PR,+83326-650!3b1!8m2!3d-25.3949951!4d-49.1781156!10e5!16s%2Fg%2F11gjr_z7j7!3m5!1s0x94dcefb9192bdfa7:0x1260145535d178dd!8m2!3d-25.3949951!4d-49.1781156!16s%2Fg%2F11gjr_z7j7?entry=ttu" target="_blank">
-                <p class="footer">Rua Clemente Ityso Horikoshi 330, Pinhais 83326650</p></a>
+                <p class="locali">Rua Clemente Ityso Horikoshi 330, Pinhais 83326650</p></a>
             </div>
             <div>
                 <p class="direito">Mateus &copy; 2024 - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
+    <div class="navbar">
+        <a href="home.html" class="home"><img width="25px" src="img/home.png" alt="Página Inicial"><span class="pagI">Página inicial</span></a>
+        <a href="home.html" class="home-white"><img width="25px" src="img/home-white.png" alt="Página Inicial"><span class="pagI">Página inicial</span></a>
+        <a href="search.html" class="search"><img width="25px" src="img/search.png"><span class="pesq">Pesquisa</span></a>
+        <a href="search.html" class="search-white"><img width="25px" src="img/search-white.png"><span class="pesq">Pesquisa</span></a>
+        <a href="#" class="explore1"><img width="25px" src="img/explore-icon-256x256-vgptecd8.png" alt="explorar"><span class="exp">Explorar</span></a>
+        <a href="reels.html" class="reels"><img width="25px" src="img/reels.png" alt="reel"><span class="rls">Reels</span></a>
+        <a href="reels.html" class="reels-white"><img width="25px" src="img/reels-white.png" alt="reel"><span class="rls">Reels</span></a>
+        <a href="#" class="messenger1"><img width="25px" src="img/free-facebook-messenger-icon-2880-thumb.png" alt="mensagens"><span class="msg">Mensagens</span></a>
+        <a href="#" class="notifs1"><img alt="Notificações" width="25px" src="img/107804.png"><span class="ntfs">Notificações</span></a>
+        <a href="criar.html" class="create"><img alt="Criar" width="25px" src="img/create.png"><span class="criar">Criar</span></a>
+        <a href="criar.html" class="create-white"><img alt="Criar" width="25px" src="img/create-white.png"><span class="criar">Criar</span></a>
+        <a href="index.html" class="profile"><img alt="Perfil" width="25px" src="img/logo.png"><span class="prof">Perfil</span></a>
+    </div>
     <script src="script.js"></script>
 </body>
 
