@@ -241,10 +241,6 @@ a[href="https://wa.me/5541988240799"]:hover{
         font-size: 18px;
     }
 
-    footer{
-        height: 250px;
-    }
-
     li{
         font-size: 14px;
         padding: 5px;
@@ -275,12 +271,6 @@ a[href="https://wa.me/5541988240799"]:hover{
     .post img {
         width: 50%;
     }
-    
-
-
-    .redes{
-        margin: 5px 10px 0px 0px;
-    }
 
     .hora{
         margin: 15px 0px 0px 0px;
@@ -299,6 +289,7 @@ a[href="https://wa.me/5541988240799"]:hover{
         padding: 20px;
         color: var(--text-color);
         background-color: var(--bg-color);
+        height: 275px;
     }
 
     .footer, .local{
@@ -332,10 +323,8 @@ a[href="https://wa.me/5541988240799"]:hover{
         bottom: 0;
         position: fixed;
         clear: both;
-    }
-
-    .home, .search, .reels, .create, .home-white, .search-white, .reels-white, .create-white{
-        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
     }
 
     img[src="img/carrinho-de-compras.png"], img[src="img/pedido.png"]{
@@ -362,11 +351,21 @@ a[href="https://wa.me/5541988240799"]:hover{
 
 /* 480px - 768px = tablet */
 @media (min-width: 480px){
+    .user, i[class="fa-solid fa-angle-left fa-2xl"], i[class="fa-solid fa-lightbulb fa-2xl"], .home, .home-white, a[href="search.html"], a[href="reels.html"], a[href="criar.html"], a[href="index.html"] {
+        display: none;
+    }
+
+    .home1, .search1, .explore1, .reels, .messenger1, .notifs, .create1, .profile1 {
+        display: block;
+    }
+
 
 }
 
 /* 768px - 1024px = telas menores, laptops */
-@media (min-width: 768px){}
+@media (min-width: 768px){
+
+}
 
 /* 1024px - 1200px = desktop */
 @media (min-width: 1024px){
